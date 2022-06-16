@@ -58,6 +58,15 @@ const Card = styled.article`
   padding: 16px;
 `;
 
+const Heading2 = styled.h2`
+  font-size: 36px;
+  line-height: 1.5;
+`;
+
+const HomeSection = styled.section`
+  margin: 64px 0;
+`;
+
 const Home = () => {
   return (
     <div>
@@ -81,14 +90,14 @@ const Home = () => {
         </div>
       </Header>
       <Wrapper>
-        <section>
-          <h2>About me</h2>
+        <HomeSection>
+          <Heading2>About me</Heading2>
           <Introduction>
             Hi! my name is Julian Soto, I'm a sofware developer.
           </Introduction>
-        </section>
-        <section>
-          <h2>Skills</h2>
+        </HomeSection>
+        <HomeSection>
+          <Heading2>Skills</Heading2>
           <CardsSection>
             <Card>
               <h1>Programming</h1>
@@ -97,10 +106,23 @@ const Home = () => {
               <h1>Interface design</h1>
             </Card>
             <Card>
-              <h1>Algebra & calculus</h1>
+              <h1>Physics & mathematics</h1>
             </Card>
           </CardsSection>
-        </section>
+        </HomeSection>
+        <HomeSection>
+          <Heading2>Portfolio</Heading2>
+        </HomeSection>
+        <HomeSection>
+          <Heading2>Contact</Heading2>
+          <a href="https://www.linkedin.com/in/juliansotop/">LinkedIn</a>
+          <br />
+          <a href="https://github.com/JulianSoto">GitHub</a>
+          <br />
+          <a href="mailto:juliansotoponce@gmail.com">
+            juliansotoponce@gmail.com
+          </a>
+        </HomeSection>
       </Wrapper>
     </div>
   );
