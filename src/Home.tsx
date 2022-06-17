@@ -40,12 +40,6 @@ const Wrapper = styled.div`
   max-width: 900px;
 `;
 
-const Introduction = styled.p`
-  font-size: 20px;
-  font-family: sans-serif;
-  padding-bottom: 16px;
-`;
-
 const CardsSection = styled.div`
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -56,6 +50,7 @@ const CardsSection = styled.div`
 const Card = styled.article`
   background-color: #eee;
   padding: 16px;
+  font-size: 16px;
 `;
 
 const Heading2 = styled.h2`
@@ -64,6 +59,8 @@ const Heading2 = styled.h2`
 `;
 
 const HomeSection = styled.section`
+  font-size: 20px;
+  font-family: sans-serif;
   margin: 64px 0;
 `;
 
@@ -92,9 +89,7 @@ const Home = () => {
       <Wrapper>
         <HomeSection>
           <Heading2>About me</Heading2>
-          <Introduction>
-            Hi! my name is Julian Soto, I'm a sofware developer.
-          </Introduction>
+          <p>Hi! my name is Julian Soto, I'm a sofware developer.</p>
         </HomeSection>
         <HomeSection>
           <Heading2>Skills</Heading2>
